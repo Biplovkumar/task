@@ -1,11 +1,4 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
+import 'react-native-gesture-handler';
 import React from 'react';
 import {
   SafeAreaView,
@@ -15,6 +8,7 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import SplashScreen from 'react-native-splash-screen'
 
 import {
   Header,
@@ -23,8 +17,10 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import { Avatar, Icon } from 'react-native-elements';
 
-const App: () => React$Node = () => {
+const App = () => {
+  SplashScreen.hide();
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -38,6 +34,13 @@ const App: () => React$Node = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
+
+
+<Icon
+  name='sc-telegram'
+  type='evilicon'
+  color='#517fa4'
+/>
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
@@ -66,6 +69,8 @@ const App: () => React$Node = () => {
             </View>
             <LearnMoreLinks />
           </View>
+      
+      
         </ScrollView>
       </SafeAreaView>
     </>
