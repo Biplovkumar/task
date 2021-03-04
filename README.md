@@ -1,6 +1,6 @@
-# task
+# Biplov Kumar (biplovkumar.github.io)
 
-Given Tasks: 
+# Given Tasks: 
 
 1. Init the application, 
 2. create 3 screens (Home, Profile, Setting) on the setting screen you have to create a text input, and the text input will take a string and after the change /submit that should be list above. Data should be manage with redux.
@@ -9,7 +9,7 @@ Given Tasks:
 5. Code pushed on Github (Don't share the drive link or zip file on mail)
 
 
-Done Tasks:
+# Done Tasks:
 
 1. Init the application
 2. Created a structure based app with global config file and styles and common functions.
@@ -27,4 +27,3 @@ Done Tasks:
 10. User can delete all data from side menu.
 
 
-# task
