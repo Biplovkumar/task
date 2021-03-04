@@ -22,7 +22,7 @@ Done Tasks:
 8_1. Added Input and submit button.
 8_2. Validate empty and white space before save the data.
 8_3. Created no Data view with bell icon and loader too for saving and populating data.
-8_4. Shown Save sweet alert after that shown added data.
+8_4. Save & Shown sweet alert after that shown added data.
 9. Created a badge for getting user data length (Count showing).
 10. User can delete all data from side menu.
 
