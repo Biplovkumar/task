@@ -42,7 +42,7 @@ export default StyleSheet.create(props => ({
     FText: { textAlign: 'center', color: Colors.Button, fontSize: height / 40, paddingLeft: l_margin / 20, },
 
     // ----------------------Flat list  -----------------------------
-    myCont: { marginHorizontal: height / 80, marginTop: -height / 25, padding: height / 80, borderRadius: height / 80, backgroundColor: Colors.Grey89 },
+    myCont: { marginHorizontal: height / 80, marginTop: Platform.OS=== 'android'? height / 80 : -height / 35, padding: height / 80, borderRadius: height / 80, backgroundColor: Colors.Grey89 },
     myContainer: { flex: 1, marginTop: StatusBar.currentHeight || 0 },
     myItem: { backgroundColor: Colors.Grey89, padding: height / 40, marginVertical: height / 160, marginHorizontal: height / 80 },
     myTitle: { fontSize: height / 40 },

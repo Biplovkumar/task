@@ -25,5 +25,14 @@
 8_4. Save & Shown sweet alert after that shown added data.
 9. Created a badge for getting user data length (Count showing).
 10. User can delete all data from side menu.
+11. App perfectly working on Both platform tested too.
+12. Created a release build with .jks.
+13. .Apk Build given on Diwai.com
+14. Code pushed on Github
+15. Added a screenShot folder (ShreenShots=> IOS,Android) there user can able to see result screenshots.
 
 
+
+.Apk Link :- 
+for arm64-v8a :- https://i.diawi.com/8ESZiA
+for armeabi-v7a :- https://i.diawi.com/cDzY7G

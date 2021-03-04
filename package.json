@@ -4,10 +4,20 @@
   "private": true,
   "scripts": {
     "android": "npx react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "log": "npx react-native log-android",
+    "ios": "npx react-native run-ios",
+    "start": "react-native start -- --reset-cache",
+    "rele": "cd android && ./gradlew assembleRelease && cd ..",
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "pod": "cd ios; pod install; cd ..",
+    "kill": "killall node",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "var": "npx react-native run-android --variant=release",
+    "bundle": "react-native bundle --platform android --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --dev false --reset-cache --assets-dest android/app/src/main/res/",
+    "debug": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && cd android && ./gradlew assembleDebug && cd ..",
+    "rel": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/build/intermediates/res/merged/release/ && rm -rf android/app/src/main/res/drawable-* && rm -rf android/app/src/main/res/raw/* && cd android && ./gradlew assembleRelease && cd .."
+
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.14.1",
