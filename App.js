@@ -36,11 +36,12 @@ const App = () => {
           )}
 
 
-<Icon
-  name='sc-telegram'
-  type='evilicon'
-  color='#517fa4'
-/>
+  <Icon
+  raised
+  name='heartbeat'
+  type='font-awesome'
+  color='#f50'
+  onPress={() => alert('hello')} />
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
